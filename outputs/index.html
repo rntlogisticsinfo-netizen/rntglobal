@@ -3,94 +3,98 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="R&T Global Logistics — daily railway parcel service, trucks on demand, booking, delivery and warehousing across North and East India. A trusted family business since 1990." />
-<meta name="theme-color" content="#1d3557" />
-<title>R&T Global Logistics — Rail, road and warehousing across India</title>
+<meta name="description" content="R&T Global Logistics — transportation, parcel handling, warehousing, loading support and interstate logistics. A registered Indian logistics company with 50+ warehouses, 100+ staff and railway coverage across India." />
+<meta name="theme-color" content="#4059ad" />
+<title>R&T Global Logistics — Transport, parcel and warehousing across India</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --navy:#1d3557;
-    --cerulean:#457b9d;
-    --frost:#a8dadc;
-    --honeydew:#f1faee;
-    --red:#e63946;
-    --red-dark:#c92e3b;
+    --sapphire:#4059ad;
+    --sapphire-deep:#2f4487;
+    --sapphire-ink:#22315f;
+    --blue-grey:#6b9ac4;
+    --pearl-aqua:#97d8c4;
+    --platinum:#eff2f1;
+    --gold:#f4b942;
+    --gold-deep:#e0a52c;
     --white:#fff;
-    --muted:#4d6a85;
-    --line:rgba(29,53,87,.13);
-    --line-strong:rgba(29,53,87,.22);
-    --shadow:0 1px 2px rgba(29,53,87,.05), 0 12px 28px rgba(29,53,87,.07);
-    --r:6px;
-    --display:Archivo,"Helvetica Neue",Arial,sans-serif;
+    --muted:#5b6b8c;
+    --line:rgba(34,49,95,.12);
+    --line-strong:rgba(34,49,95,.22);
+    --shadow:0 1px 2px rgba(34,49,95,.05), 0 14px 32px rgba(34,49,95,.09);
+    --r:8px;
+    --display:Sora,"Helvetica Neue",Arial,sans-serif;
     --body:Inter,"Helvetica Neue",Arial,sans-serif;
     --mono:"IBM Plex Mono",ui-monospace,monospace;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;background:var(--honeydew);color:var(--navy);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  body{margin:0;background:var(--platinum);color:var(--sapphire-ink);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
   a{color:inherit;text-decoration:none}
   img{display:block;max-width:100%}
-  h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:-.03em;margin:0;color:var(--navy)}
+  h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:-.03em;margin:0;color:var(--sapphire-ink)}
   p{margin:0}
-  :focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:3px}
 
   .wrap{width:min(1200px,calc(100% - 48px));margin-inline:auto}
-  .label{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--cerulean)}
-  .label-red{color:var(--red)}
+  .label{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--sapphire)}
+  .label-gold{color:var(--gold-deep)}
 
   /* ---------- buttons ---------- */
-  .btn{display:inline-flex;align-items:center;gap:9px;border-radius:var(--r);padding:14px 22px;font-family:var(--body);font-size:14px;font-weight:600;letter-spacing:.01em;border:1px solid transparent;transition:background .2s ease,color .2s ease,border-color .2s ease}
+  .btn{display:inline-flex;align-items:center;gap:9px;border-radius:var(--r);padding:14px 22px;font-family:var(--body);font-size:14px;font-weight:600;letter-spacing:.01em;border:1px solid transparent;transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
   .btn svg{flex:none}
-  .btn-primary{background:var(--red);color:var(--white)}
-  .btn-primary:hover{background:var(--red-dark)}
-  .btn-outline{border-color:var(--line-strong);color:var(--navy);background:transparent}
-  .btn-outline:hover{border-color:var(--navy);background:rgba(29,53,87,.04)}
+  .btn-primary{background:var(--sapphire);color:var(--white)}
+  .btn-primary:hover{background:var(--sapphire-deep)}
+  .btn-gold{background:var(--gold);color:var(--sapphire-ink)}
+  .btn-gold:hover{background:var(--gold-deep)}
+  .btn-outline{border-color:var(--line-strong);color:var(--sapphire-ink);background:transparent}
+  .btn-outline:hover{border-color:var(--sapphire);background:rgba(64,89,173,.06)}
   .btn-sm{padding:10px 16px;font-size:13px}
 
   /* ---------- utility bar ---------- */
-  .utility{background:var(--navy);color:#c9dde6}
+  .utility{background:var(--sapphire-ink);color:#c6d5ea}
   .utility-in{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:38px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
   .utility a:hover{color:var(--white)}
   .utility-right{display:flex;gap:26px}
   .status{display:inline-flex;align-items:center;gap:8px}
-  .status i{width:6px;height:6px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(230,57,70,.25)}
+  .status i{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(244,185,66,.22)}
 
   /* ---------- header ---------- */
-  .header{position:sticky;top:0;z-index:40;background:rgba(241,250,238,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:box-shadow .25s ease}
-  .header.is-stuck{box-shadow:0 6px 20px rgba(29,53,87,.07)}
+  .header{position:sticky;top:0;z-index:40;background:rgba(239,242,241,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:box-shadow .25s ease}
+  .header.is-stuck{box-shadow:0 6px 20px rgba(34,49,95,.08)}
   .header-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:74px}
   .brand{display:flex;align-items:center;gap:12px}
   .brand-name{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.035em;line-height:1.05}
-  .brand-sub{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--cerulean);font-weight:500;margin-top:3px}
+  .brand-sub{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sapphire);font-weight:500;margin-top:3px}
   .nav{display:flex;align-items:center;gap:32px}
-  .nav-links{display:flex;gap:30px;font-size:14px;font-weight:500;color:var(--muted)}
+  .nav-links{display:flex;gap:28px;font-size:14px;font-weight:500;color:var(--muted)}
   .nav-links a{position:relative;padding:4px 0}
-  .nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--red);transition:right .25s ease}
-  .nav-links a:hover{color:var(--navy)}
+  .nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--gold);transition:right .25s ease}
+  .nav-links a:hover{color:var(--sapphire-ink)}
   .nav-links a:hover::after{right:0}
 
   /* ---------- hero ---------- */
   .hero{padding:78px 0 0}
   .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}
-  .hero h1{font-size:clamp(42px,5.4vw,72px);line-height:1.04;letter-spacing:-.042em;font-weight:700;margin:20px 0 22px}
-  .hero h1 span{color:var(--cerulean)}
+  .hero h1{font-size:clamp(42px,5.4vw,72px);line-height:1.04;letter-spacing:-.045em;font-weight:700;margin:20px 0 22px}
+  .hero h1 span{color:var(--sapphire)}
   .hero-intro{font-size:17px;line-height:1.65;color:var(--muted);max-width:520px}
   .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
   .hero-note{margin-top:26px;font-size:13.5px;color:var(--muted);max-width:520px}
-  .hero-note b{color:var(--navy);font-weight:600}
+  .hero-note b{color:var(--sapphire-ink);font-weight:600}
   .hero-figure{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);margin:0}
   .hero-figure img{width:100%;height:clamp(340px,42vw,470px);object-fit:cover}
-  .hero-caption{background:var(--navy);color:var(--frost);font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;padding:14px 18px}
+  .hero-caption{background:var(--sapphire-ink);color:var(--pearl-aqua);font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;padding:14px 18px}
 
   /* ---------- stats ---------- */
   .stats{margin-top:80px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
-  .stat{padding:30px 28px 32px;border-right:1px solid var(--line)}
+  .stats-grid{display:grid;grid-template-columns:repeat(5,1fr)}
+  .stat{padding:30px 24px 32px;border-right:1px solid var(--line)}
   .stat:first-child{padding-left:0}
   .stat:last-child{border-right:0;padding-right:0}
-  .stat b{display:block;font-family:var(--display);font-size:34px;font-weight:600;letter-spacing:-.04em;line-height:1;margin:12px 0 8px}
+  .stat b{display:block;font-family:var(--display);font-size:clamp(26px,2.6vw,34px);font-weight:600;letter-spacing:-.04em;line-height:1;margin:12px 0 8px}
   .stat p{font-size:13px;color:var(--muted);line-height:1.5}
 
   /* ---------- sections ---------- */
@@ -101,45 +105,79 @@
 
   /* ---------- services ---------- */
   .services{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-  .service{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease}
+  .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .service{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:30px 28px 30px;display:flex;flex-direction:column;gap:12px;transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease}
   .service:hover{border-color:var(--line-strong);box-shadow:var(--shadow);transform:translateY(-3px)}
-  .service-media{position:relative;height:226px;background:var(--frost);overflow:hidden}
-  .service-media img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.1,1)}
-  .service:hover .service-media img{transform:scale(1.04)}
-  .service-num{position:absolute;top:0;left:0;background:var(--navy);color:var(--white);font-family:var(--mono);font-size:11px;letter-spacing:.1em;padding:8px 12px}
-  .service-body{padding:26px 26px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
-  .service h3{font-size:20px;letter-spacing:-.03em}
+  .service-icon{width:52px;height:52px;border-radius:50%;background:var(--sapphire);display:grid;place-items:center;transition:background .25s ease}
+  .service:hover .service-icon{background:var(--gold)}
+  .service-icon svg{stroke:var(--white);transition:stroke .25s ease}
+  .service:hover .service-icon svg{stroke:var(--sapphire-ink)}
+  .service h3{font-size:19px;letter-spacing:-.03em;margin-top:6px}
   .service p{font-size:14px;color:var(--muted);line-height:1.6}
-  .service-link{margin-top:auto;padding-top:18px;font-size:13px;font-weight:600;color:var(--cerulean);display:inline-flex;align-items:center;gap:8px}
+  .service-link{margin-top:auto;padding-top:18px;font-size:13px;font-weight:600;color:var(--sapphire);display:inline-flex;align-items:center;gap:8px}
   .service-link span{transition:transform .25s ease}
   .service:hover .service-link span{transform:translateX(5px)}
 
+  /* ---------- gallery ---------- */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px}
+  .shot{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--pearl-aqua)}
+  .shot img{width:100%;height:190px;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.1,1)}
+  .shot:hover img{transform:scale(1.05)}
+  .shot figcaption{position:absolute;left:0;bottom:0;right:0;background:linear-gradient(to top,rgba(34,49,95,.88),rgba(34,49,95,0));color:var(--white);font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:26px 14px 12px}
+
   /* ---------- about ---------- */
   .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
-  .founder{display:flex;flex-direction:column;background:var(--navy);border-radius:var(--r);overflow:hidden;color:var(--white)}
-  .founder img{width:100%;height:330px;object-fit:cover;object-position:50% 26%}
-  .founder-body{padding:32px 34px 36px;display:flex;flex-direction:column;gap:10px}
-  .founder-body h3{color:var(--white);font-size:26px;letter-spacing:-.035em;margin-top:6px}
-  .founder-body p{color:#cfe1e8;font-size:14px;line-height:1.65}
-  .founder-name{font-family:var(--display);font-size:16px;font-weight:600;color:var(--frost)}
-  .facts{border:1px solid var(--line);border-radius:var(--r);padding:34px;background:var(--white);display:flex;flex-direction:column}
-  .facts h3{font-size:24px;letter-spacing:-.035em;margin:14px 0 6px}
-  .fact{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:20px 0;border-top:1px solid var(--line)}
-  .fact:first-of-type{margin-top:20px}
-  .fact b{font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--red);padding-top:3px}
-  .fact span{font-size:14px;color:var(--muted);line-height:1.6}
+  .founder{background:var(--sapphire-ink);border-radius:var(--r);color:var(--white);padding:38px 36px 40px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden}
+  .founder::after{content:"";position:absolute;right:-70px;top:-70px;width:220px;height:220px;border-radius:50%;background:rgba(151,216,196,.12)}
+  .founder-mark{width:54px;height:54px;border-radius:var(--r);background:var(--gold);color:var(--sapphire-ink);font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:-.04em;display:grid;place-items:center}
+  .founder-body{position:relative;display:flex;flex-direction:column;gap:12px}
+  .founder h3{color:var(--white);font-size:26px;letter-spacing:-.035em;margin-top:8px}
+  .founder p{color:#d6e2f2;font-size:14.5px;line-height:1.7}
+  .founder-name{font-family:var(--display);font-size:17px;font-weight:600;color:var(--pearl-aqua)}
+  .founder-quote{margin-top:6px;padding-top:20px;border-top:1px solid rgba(151,216,196,.25);font-family:var(--display);font-size:16px;font-weight:500;line-height:1.55;color:var(--white);letter-spacing:-.02em}
+
+  .why{border:1px solid var(--line);border-radius:var(--r);padding:36px;background:var(--white);display:flex;flex-direction:column}
+  .why h3{font-size:24px;letter-spacing:-.035em;margin:14px 0 6px}
+  .why-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+  .why-item{display:flex;align-items:center;gap:12px;padding:14px 14px;border:1px solid var(--line);border-radius:var(--r);background:var(--platinum);transition:border-color .2s ease,background .2s ease}
+  .why-item:hover{border-color:var(--gold);background:var(--white)}
+  .why-item i{flex:none;width:34px;height:34px;border-radius:50%;background:var(--gold);display:grid;place-items:center}
+  .why-item svg{stroke:var(--sapphire-ink)}
+  .why-item span{font-size:14px;font-weight:600;letter-spacing:-.01em}
+  .why-note{margin-top:22px;font-size:13.5px;color:var(--muted)}
 
   /* ---------- process ---------- */
   .process{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-strong)}
   .step{padding:28px 28px 8px 0;border-right:1px solid var(--line);position:relative}
-  .step::before{content:"";position:absolute;top:-3px;left:0;width:5px;height:5px;background:var(--red);border-radius:50%}
+  .step::before{content:"";position:absolute;top:-4px;left:0;width:7px;height:7px;background:var(--gold);border-radius:50%}
   .step + .step{padding-left:28px}
   .step:last-child{border-right:0;padding-right:0}
-  .step b{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--cerulean)}
+  .step b{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--sapphire)}
   .step h3{font-size:18px;margin:20px 0 8px;letter-spacing:-.03em}
   .step p{font-size:14px;color:var(--muted);line-height:1.6}
+
+  /* ---------- network map ---------- */
+  .network{background:var(--platinum)}
+  .map-shell{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;border:1px solid var(--line);border-radius:var(--r);background:var(--white);padding:34px;box-shadow:var(--shadow)}
+  .map-figure{position:relative;background:linear-gradient(160deg,rgba(151,216,196,.18),rgba(107,154,196,.12));border-radius:var(--r);padding:10px}
+  #india-map{width:100%;height:auto;display:block;overflow:visible}
+  .map-outline{fill:rgba(107,154,196,.16);stroke:var(--sapphire);stroke-width:2.2;stroke-linejoin:round}
+  .pin-halo{fill:var(--gold);opacity:.35}
+  .pin-hub{fill:var(--gold);stroke:var(--sapphire-ink);stroke-width:1.4}
+  .pin-dot{fill:var(--sapphire);stroke:var(--white);stroke-width:1.2}
+  .pin-city{font-family:var(--mono);font-size:11px;fill:var(--sapphire-ink);letter-spacing:.04em}
+  @keyframes pulse{0%{r:9;opacity:.45}70%{r:20;opacity:0}100%{r:20;opacity:0}}
+  .pulse{animation:pulse 2.8s ease-out infinite}
+  .map-copy h2{font-size:clamp(28px,3vw,40px);letter-spacing:-.04em;line-height:1.1;margin:16px 0 16px}
+  .map-copy p{color:var(--muted);font-size:15.5px}
+  .legend{display:flex;flex-wrap:wrap;gap:22px;margin-top:26px;font-size:13px;color:var(--muted)}
+  .legend span{display:inline-flex;align-items:center;gap:9px}
+  .legend i{width:11px;height:11px;border-radius:50%}
+  .legend .k-hub{background:var(--gold);box-shadow:0 0 0 3px rgba(244,185,66,.25)}
+  .legend .k-dot{background:var(--sapphire)}
+  .map-points{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 20px;margin-top:28px;padding-top:24px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted)}
+  .map-points b{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px}
 
   /* ---------- locations ---------- */
   .location-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
@@ -148,20 +186,20 @@
   .location:nth-child(n+4){grid-column:span 3}
   .location strong{font-family:var(--display);font-size:16px;font-weight:600;letter-spacing:-.025em}
   .location p{font-size:13.5px;color:var(--muted);line-height:1.6}
-  .location a{margin-top:auto;padding-top:16px;font-size:12.5px;font-weight:600;color:var(--cerulean)}
-  .location a:hover{color:var(--red)}
+  .location a{margin-top:auto;padding-top:16px;font-size:12.5px;font-weight:600;color:var(--sapphire)}
+  .location a:hover{color:var(--gold-deep)}
 
   /* ---------- contact + footer ---------- */
-  .contact{background:var(--navy);color:var(--white);padding:96px 0 0}
+  .contact{background:var(--sapphire-ink);color:var(--white);padding:96px 0 0}
   .contact h2{color:var(--white);font-size:clamp(30px,3.4vw,44px);letter-spacing:-.04em;line-height:1.1;margin:16px 0 18px}
-  .contact .label{color:var(--frost)}
+  .contact .label{color:var(--pearl-aqua)}
   .contact-grid{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:end;padding-bottom:64px}
-  .contact p{color:#cfe1e8;max-width:480px;font-size:15.5px}
+  .contact p{color:#d6e2f2;max-width:480px;font-size:15.5px}
   .contact-actions{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
   .contact-line{font-family:var(--display);font-size:19px;font-weight:600;letter-spacing:-.025em}
-  .contact-line:hover{color:var(--frost)}
-  .footer{border-top:1px solid rgba(168,218,220,.22);padding:26px 0 34px}
-  .footer-in{display:flex;justify-content:space-between;align-items:center;gap:24px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9fbccb}
+  .contact-line:hover{color:var(--pearl-aqua)}
+  .footer{border-top:1px solid rgba(151,216,196,.22);padding:26px 0 34px}
+  .footer-in{display:flex;justify-content:space-between;align-items:center;gap:24px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#a8bcd8}
   .footer-links{display:flex;gap:26px}
   .footer-links a:hover{color:var(--white)}
 
@@ -171,18 +209,24 @@
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
     .reveal{opacity:1;transform:none;transition:none}
-    .service:hover .service-media img{transform:none}
+    .shot:hover img{transform:none}
+    .pulse{animation:none;opacity:.3}
   }
 
   /* ---------- responsive ---------- */
+  @media(max-width:1080px){
+    .service-grid{grid-template-columns:repeat(2,1fr)}
+    .map-shell{grid-template-columns:1fr;gap:32px}
+  }
   @media(max-width:960px){
     .hero-grid{grid-template-columns:1fr;gap:38px}
     .section-head{grid-template-columns:1fr;gap:18px;align-items:start}
     .stats-grid{grid-template-columns:repeat(2,1fr)}
-    .stat{padding:24px 22px 26px}
+    .stat{padding:24px 22px 26px;border-bottom:1px solid var(--line)}
     .stat:nth-child(odd){padding-left:0}
     .stat:nth-child(2n){border-right:0;padding-right:0}
-    .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+    .stat:last-child{border-bottom:0;grid-column:1 / -1}
+    .gallery{grid-template-columns:repeat(2,1fr)}
     .about-grid{grid-template-columns:1fr}
     .steps{grid-template-columns:1fr 1fr}
     .step:nth-child(2n){border-right:0;padding-right:0}
@@ -203,15 +247,18 @@
     .hero{padding-top:52px}
     .stats{margin-top:56px}
     .service-grid{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr;margin-top:40px}
+    .why-list{grid-template-columns:1fr}
+    .map-shell{padding:20px}
+    .map-points{grid-template-columns:1fr}
+    .pin-city{display:none}
     .steps{grid-template-columns:1fr}
     .step{border-right:0;padding:26px 0 6px!important}
     .step + .step{border-top:1px solid var(--line)}
     .location-grid{grid-template-columns:1fr}
     .footer-in{flex-direction:column;align-items:flex-start;gap:14px}
-    .founder img{height:270px}
-    .founder-body{padding:26px 26px 30px}
-    .facts{padding:26px}
-    .fact{grid-template-columns:1fr;gap:6px}
+    .founder{padding:28px 26px 32px}
+    .why{padding:26px}
     .contact{padding-top:72px}
   }
 </style>
@@ -234,18 +281,19 @@
   <div class="wrap header-in">
     <a class="brand" href="#top" aria-label="R&T Global Logistics, home">
       <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
-        <rect width="34" height="34" rx="6" fill="#1d3557"/>
-        <path d="M8 22.5h18" stroke="#a8dadc" stroke-width="2" stroke-linecap="round"/>
-        <path d="M8 17h12" stroke="#a8dadc" stroke-width="2" stroke-linecap="round"/>
-        <path d="M8 11.5h18" stroke="#e63946" stroke-width="2" stroke-linecap="round"/>
+        <rect width="34" height="34" rx="7" fill="#22315f"/>
+        <path d="M8 22.5h18" stroke="#97d8c4" stroke-width="2" stroke-linecap="round"/>
+        <path d="M8 17h12" stroke="#6b9ac4" stroke-width="2" stroke-linecap="round"/>
+        <path d="M8 11.5h18" stroke="#f4b942" stroke-width="2" stroke-linecap="round"/>
       </svg>
-      <span class="brand-name">R&amp;T Global Logistics<span class="brand-sub">Delhi · Since 1990</span></span>
+      <span class="brand-name">R&amp;T Global Logistics<span class="brand-sub">New Delhi · Registered in India</span></span>
     </a>
     <nav class="nav" aria-label="Main">
       <div class="nav-links">
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#process">How it works</a>
+        <a href="#network">Network</a>
         <a href="#locations">Locations</a>
       </div>
       <a class="btn btn-primary btn-sm" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20would%20like%20to%20discuss%20a%20shipment." target="_blank" rel="noopener">WhatsApp us</a>
@@ -260,7 +308,7 @@
     <div class="wrap">
       <div class="hero-grid">
         <div class="reveal">
-          <span class="label label-red">Rail · Road · Warehousing</span>
+          <span class="label label-gold">Rail · Road · Warehousing</span>
           <h1>Moving India,<br /><span>properly</span>.</h1>
           <p class="hero-intro">Reliable rail, road and warehousing support for businesses that need their goods handled with care and delivered with certainty.</p>
           <div class="hero-actions">
@@ -269,7 +317,7 @@
             </a>
             <a class="btn btn-outline" href="tel:+919315456193">Call +91 93154 56193</a>
           </div>
-          <p class="hero-note"><b>A trusted family business since 1990.</b> A three-decade legacy, carried forward with direct railway operations and modern infrastructure.</p>
+          <p class="hero-note"><b>A registered logistics company in India.</b> Railway parcel coverage across the country with dedicated staff at every handover, backed by our own warehouses and truck support.</p>
         </div>
         <figure class="hero-figure reveal">
           <img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=2000&q=85" alt="Aerial view of a container port" />
@@ -281,24 +329,29 @@
       <div class="stats reveal">
         <div class="stats-grid">
           <div class="stat">
-            <span class="label">Experience</span>
-            <b>30+</b>
-            <p>Years in parcel booking, dispatch and delivery.</p>
+            <span class="label">Railway coverage</span>
+            <b>All India</b>
+            <p>Parcel operations at stations nationwide with dedicated staff.</p>
+          </div>
+          <div class="stat">
+            <span class="label">Warehouses</span>
+            <b>50+</b>
+            <p>Storage and dispatch points across India.</p>
+          </div>
+          <div class="stat">
+            <span class="label">Team</span>
+            <b>100+</b>
+            <p>Trained staff and labour handling goods every day.</p>
           </div>
           <div class="stat">
             <span class="label">Delhi offices</span>
-            <b>05</b>
+            <b>5+</b>
             <p>Head office, booking branches and railway desks.</p>
           </div>
           <div class="stat">
-            <span class="label">Railway stations</span>
-            <b>02</b>
-            <p>New Delhi and Anand Vihar parcel operations.</p>
-          </div>
-          <div class="stat">
-            <span class="label">Warehousing</span>
-            <b>03</b>
-            <p>Gandhi Nagar godowns with experienced labour.</p>
+            <span class="label">Compliance</span>
+            <b>Registered</b>
+            <p>A registered company in India with full documentation support.</p>
           </div>
         </div>
       </div>
@@ -310,7 +363,7 @@
     <div class="wrap">
       <div class="section-head reveal">
         <div>
-          <span class="label">Services</span>
+          <span class="label">Our services</span>
           <h2>Built around the consignment.</h2>
         </div>
         <p>From booking through final delivery, every service is designed to keep goods safe, organised and moving at the pace your business needs.</p>
@@ -318,40 +371,65 @@
 
       <div class="service-grid">
         <article class="service reveal">
-          <div class="service-media"><img src="rail-freight.jpeg" alt="Freight train carrying parcels" loading="lazy" /><span class="service-num">01</span></div>
-          <div class="service-body">
-            <h3>Daily railway parcel service</h3>
-            <p>Direct parcel dispatch by rail, with accountable handling and timely delivery.</p>
-            <a class="service-link" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20would%20like%20to%20enquire%20about%20daily%20railway%20parcel%20service." target="_blank" rel="noopener">Enquire about rail dispatch <span>&rarr;</span></a>
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h11v10H2z"/><path d="M13 10h4.5l3.5 3.5V17h-8"/><circle cx="7" cy="19" r="1.8"/><circle cx="17" cy="19" r="1.8"/></svg>
           </div>
+          <h3>Transportation services</h3>
+          <p>Efficient goods transportation for businesses and individuals, by rail and by road.</p>
+          <a class="service-link" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20would%20like%20to%20enquire%20about%20transportation%20services." target="_blank" rel="noopener">Move goods with us <span>&rarr;</span></a>
         </article>
 
         <article class="service reveal">
-          <div class="service-media"><img src="container-truck.jpeg" alt="Container truck on the road" loading="lazy" /><span class="service-num">02</span></div>
-          <div class="service-body">
-            <h3>Truck on demand</h3>
-            <p>Flexible truck arrangements shaped around the quantity and destination of your goods.</p>
-            <a class="service-link" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20need%20a%20truck%20for%20a%20shipment." target="_blank" rel="noopener">Request a truck <span>&rarr;</span></a>
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7.5v9L12 21l9-4.5v-9L12 3z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></svg>
           </div>
+          <h3>Parcel handling</h3>
+          <p>Secure parcel booking and handling through railway and local networks.</p>
+          <a class="service-link" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20would%20like%20to%20book%20a%20parcel." target="_blank" rel="noopener">Book a parcel <span>&rarr;</span></a>
         </article>
 
         <article class="service reveal">
-          <div class="service-media"><img src="shipment-handling.jpg" alt="Staff handling a shipment for dispatch" loading="lazy" /><span class="service-num">03</span></div>
-          <div class="service-body">
-            <h3>Booking &amp; delivery</h3>
-            <p>Pickup, loading, unloading, tracking and final delivery — coordinated end to end.</p>
-            <a class="service-link" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20would%20like%20to%20book%20a%20consignment." target="_blank" rel="noopener">Book a consignment <span>&rarr;</span></a>
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 4l9 6.5V20H3v-9.5z"/><path d="M8 20v-6h8v6"/><path d="M8 17h8"/></svg>
           </div>
+          <h3>Warehouse &amp; storage</h3>
+          <p>Safe temporary storage and inventory support across 50+ warehouses in India.</p>
+          <a class="service-link" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20would%20like%20to%20discuss%20warehousing." target="_blank" rel="noopener">Discuss storage space <span>&rarr;</span></a>
         </article>
 
         <article class="service reveal">
-          <div class="service-media"><img src="warehouse.jpg" alt="Warehouse storage racks" loading="lazy" /><span class="service-num">04</span></div>
-          <div class="service-body">
-            <h3>Warehousing solutions</h3>
-            <p>Three Gandhi Nagar godowns with experienced labour and organised dispatch.</p>
-            <a class="service-link" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20would%20like%20to%20discuss%20warehousing." target="_blank" rel="noopener">Discuss storage space <span>&rarr;</span></a>
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="5" r="2"/><circle cx="16.5" cy="5" r="2"/><path d="M5 21v-6H4v-3a3 3 0 0 1 3-3h1a3 3 0 0 1 3 3v3h-1v6"/><path d="M14 21v-6h-1v-3a3 3 0 0 1 3-3h1a3 3 0 0 1 3 3v3h-1v6"/></svg>
           </div>
+          <h3>Loading &amp; unloading</h3>
+          <p>Professional labour support for goods management at both ends of the journey.</p>
+          <a class="service-link" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20need%20loading%20and%20unloading%20support." target="_blank" rel="noopener">Arrange labour support <span>&rarr;</span></a>
         </article>
+
+        <article class="service reveal">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>
+          </div>
+          <h3>Interstate logistics</h3>
+          <p>Reliable transport services between cities and states, coordinated end to end.</p>
+          <a class="service-link" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20have%20an%20interstate%20shipment." target="_blank" rel="noopener">Plan an interstate move <span>&rarr;</span></a>
+        </article>
+
+        <article class="service reveal">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.5l3.5 2"/></svg>
+          </div>
+          <h3>Timely delivery</h3>
+          <p>Commitment to on-time dispatch and delivery, with tracking through to the doorstep.</p>
+          <a class="service-link" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20need%20a%20time-bound%20delivery." target="_blank" rel="noopener">Check delivery timelines <span>&rarr;</span></a>
+        </article>
+      </div>
+
+      <div class="gallery reveal">
+        <figure class="shot"><img src="rail-freight.jpeg" alt="Freight train carrying parcels" loading="lazy" /><figcaption>Railway parcel dispatch</figcaption></figure>
+        <figure class="shot"><img src="container-truck.jpeg" alt="Container truck on the road" loading="lazy" /><figcaption>Trucks on demand</figcaption></figure>
+        <figure class="shot"><img src="shipment-handling.jpg" alt="Staff handling a shipment for dispatch" loading="lazy" /><figcaption>Booking &amp; delivery</figcaption></figure>
+        <figure class="shot"><img src="warehouse.jpg" alt="Warehouse storage racks" loading="lazy" /><figcaption>Warehousing</figcaption></figure>
       </div>
     </div>
   </section>
@@ -364,27 +442,35 @@
           <span class="label">Our story</span>
           <h2>Experience that stays practical.</h2>
         </div>
-        <p>Our journey began in 1990 in Gandhi Nagar, Delhi as a booking and delivery agency grounded in honest service. Today, the next generation strengthens that foundation with direct rail operations and better infrastructure.</p>
+        <p>R&amp;T Global Logistics is a registered Indian logistics company run by people who learned this work on the platform and the loading dock — not from a manual. Today that experience runs across railway parcel operations, road transport and warehousing.</p>
       </div>
 
       <div class="about-grid">
         <article class="founder reveal">
-          <img src="raunak-tiwari.jpeg" alt="Raunak Tiwari, Founder and CEO of R&T Global Logistics" loading="lazy" />
+          <div class="founder-mark">RT</div>
           <div class="founder-body">
-            <span class="label" style="color:var(--frost)">Founder &amp; CEO</span>
+            <span class="label" style="color:var(--pearl-aqua)">Founder &amp; CEO</span>
             <span class="founder-name">Raunak Tiwari</span>
-            <h3>A legacy, moving forward.</h3>
-            <p>Dedicated staff, reliable labour support and close ownership of every consignment — bringing the family business values of 1990 into today’s logistics operations.</p>
+            <h3>Started young, learned on the floor.</h3>
+            <p>Raunak dropped out of formal studies early and went straight into the work — parcel counters, railway platforms, loading docks and long nights at the warehouse. What he could not learn in a classroom, he picked up from consignments, drivers and customers who expected their goods to arrive on time.</p>
+            <p>That hands-on start is still how R&amp;T runs. He is personally involved in operations, keeps growing the network station by station and warehouse by warehouse, and holds the team to one standard: own the consignment until it is delivered.</p>
+            <p class="founder-quote">“Every parcel belongs to someone who is waiting for it. That is the whole job.”</p>
           </div>
         </article>
 
-        <article class="facts reveal">
-          <span class="label label-red">Why R&amp;T</span>
+        <article class="why reveal">
+          <span class="label label-gold">Why choose R&amp;T Logistics?</span>
           <h3>Built on work that earns repeat trust.</h3>
-          <div class="fact"><b>Since</b><span>30+ years of industry experience and a trusted family business since 1990.</span></div>
-          <div class="fact"><b>Operations</b><span>Direct railway operations paired with booking, delivery and truck support.</span></div>
-          <div class="fact"><b>Reach</b><span>A strong working network across North and East India.</span></div>
-          <div class="fact"><b>Documents</b><span>Consignment records, transport documentation and GST / e-way bill coordination supported as required.</span></div>
+          <p style="color:var(--muted);font-size:14.5px">Businesses stay with us because the basics are handled properly, every single time.</p>
+          <div class="why-list">
+            <div class="why-item"><i><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></i><span>Fast delivery</span></div>
+            <div class="why-item"><i><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6l7-3z"/></svg></i><span>Experienced staff</span></div>
+            <div class="why-item"><i><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3.5v5c0 4-2.9 7.2-7 8.5-4.1-1.3-7-4.5-7-8.5v-5L12 3z"/><path d="M9.5 12l1.8 1.8 3.4-3.6"/></svg></i><span>Safe parcel handling</span></div>
+            <div class="why-item"><i><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg></i><span>Strong transport network</span></div>
+            <div class="why-item"><i><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v9M9.7 10c0-1.2 1-2 2.3-2s2.3.8 2.3 2-1 1.8-2.3 2-2.3.8-2.3 2 1 2 2.3 2 2.3-.8 2.3-2"/></svg></i><span>Affordable pricing</span></div>
+            <div class="why-item"><i><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M4 13v3a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2zM20 13v3a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2z"/></svg></i><span>Reliable customer support</span></div>
+          </div>
+          <p class="why-note">Consignment records, transport documentation and GST / e-way bill coordination are supported as required.</p>
         </article>
       </div>
     </div>
@@ -410,6 +496,35 @@
     </div>
   </section>
 
+  <!-- network map -->
+  <section id="network" class="network">
+    <div class="wrap">
+      <div class="map-shell reveal">
+        <figure class="map-figure">
+          <svg id="india-map" viewBox="0 0 640 690" role="img" aria-label="Map of India showing R&T Global Logistics railway parcel points and offices">
+            <path id="india-outline" class="map-outline" d="" />
+            <g id="india-pins"></g>
+          </svg>
+        </figure>
+        <div class="map-copy">
+          <span class="label label-gold">Our network</span>
+          <h2>Present where the goods need to go.</h2>
+          <p>Railway parcel coverage across India with dedicated staff at key stations, supported by 50+ warehouses and a road network that reaches beyond the rail head.</p>
+          <div class="legend">
+            <span><i class="k-hub"></i> Major hubs &amp; offices</span>
+            <span><i class="k-dot"></i> Railway parcel &amp; delivery points</span>
+          </div>
+          <div class="map-points">
+            <div><b>Head office</b>New Delhi, with 5+ working points across the city.</div>
+            <div><b>Railway desks</b>Dedicated staff at parcel stations nationwide.</div>
+            <div><b>Warehousing</b>50+ storage and dispatch points across India.</div>
+            <div><b>Team</b>100+ staff and trained labour on the ground.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- locations -->
   <section id="locations">
     <div class="wrap">
@@ -423,10 +538,10 @@
 
       <div class="location-grid">
         <article class="location reveal">
-          <span class="label label-red">Head office</span>
-          <strong>Gandhi Nagar, New Delhi</strong>
+          <span class="label label-gold">Head office</span>
+          <strong>New Delhi</strong>
           <p>E-40, Near Tarang Apartment,<br />New Delhi - 110092</p>
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=E-40%20Tarang%20Apartment%20Gandhi%20Nagar%20New%20Delhi%20110092" target="_blank" rel="noopener">Get directions &rarr;</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=E-40%20Tarang%20Apartment%20New%20Delhi%20110092" target="_blank" rel="noopener">Get directions &rarr;</a>
         </article>
         <article class="location reveal">
           <span class="label">Booking &amp; delivery</span>
@@ -468,7 +583,7 @@
         <div class="contact-actions">
           <a class="contact-line" href="tel:+919315456193">+91 93154 56193</a>
           <a class="contact-line" href="mailto:rntlogistics.info@gmail.com">rntlogistics.info@gmail.com</a>
-          <a class="btn btn-primary" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20would%20like%20to%20enquire%20about%20a%20shipment." target="_blank" rel="noopener">Message us on WhatsApp
+          <a class="btn btn-gold" href="https://wa.me/919315456193?text=Hello%20RnT%20Global%20Logistics%2C%20I%20would%20like%20to%20enquire%20about%20a%20shipment." target="_blank" rel="noopener">Message us on WhatsApp
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -482,6 +597,7 @@
           <div class="footer-links">
             <a href="#services">Services</a>
             <a href="#about">About</a>
+            <a href="#network">Network</a>
             <a href="#locations">Locations</a>
           </div>
           <span>&copy; <span id="year"></span> R&amp;T Global Logistics</span>
@@ -506,6 +622,98 @@
     });
   }, {threshold:.12});
   document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  /* ---------- India network map ---------- */
+  (function(){
+    var SVG = 'http://www.w3.org/2000/svg';
+    // Simplified national outline, stored as [longitude, latitude]
+    var OUTLINE = [
+      [77.0,35.5],[78.2,34.6],[78.9,34.0],[79.3,33.0],[79.1,32.4],[78.7,31.5],[79.1,30.9],
+      [80.2,30.2],[80.1,28.8],[81.5,28.3],[83.0,27.4],[84.5,27.3],[86.0,26.6],[87.2,26.4],
+      [88.1,26.4],[88.2,27.2],[88.9,28.1],[89.1,27.3],[89.6,26.7],[91.0,26.8],[92.1,26.9],
+      [92.6,27.5],[94.0,27.6],[95.3,28.3],[96.5,29.4],[97.4,28.3],[96.8,27.3],[96.2,27.2],
+      [95.1,26.6],[94.7,25.5],[94.6,24.5],[93.4,23.2],[93.2,22.3],[92.7,22.1],[92.3,23.7],
+      [91.6,23.0],[91.2,23.9],[92.1,24.9],[90.0,25.2],[89.7,26.1],[88.6,26.3],[88.2,25.2],
+      [88.7,24.3],[88.0,24.2],[88.1,23.2],[88.9,22.0],[87.9,21.7],[87.0,21.5],[86.9,20.8],
+      [86.3,20.2],[85.1,19.5],[84.0,18.7],[82.5,17.2],[81.2,16.3],[80.4,15.8],[80.1,15.0],
+      [80.3,13.5],[79.9,12.0],[79.8,10.3],[79.2,10.3],[78.9,9.3],[79.1,8.9],[78.1,8.4],
+      [77.5,8.1],[76.5,9.0],[76.0,10.5],[75.4,11.8],[74.7,13.2],[74.1,14.8],[73.5,16.0],
+      [73.2,17.5],[72.8,18.9],[72.7,20.0],[72.9,21.2],[72.5,21.7],[72.1,21.1],[71.0,20.8],
+      [70.0,21.0],[69.0,22.2],[68.4,23.6],[68.9,24.3],[70.2,24.3],[70.8,25.7],[70.1,26.6],
+      [69.6,27.2],[70.6,28.0],[72.3,28.8],[73.9,29.9],[74.6,31.1],[75.3,32.3],[74.6,32.8],
+      [74.0,34.0],[73.9,34.6],[74.6,35.5]
+    ];
+
+    var PINS = [
+      {n:'New Delhi', lat:28.64, lng:77.22, hub:true, label:true},
+      {n:'Mumbai',    lat:19.08, lng:72.88, hub:true, label:true},
+      {n:'Kolkata',   lat:22.57, lng:88.36, hub:true, label:true},
+      {n:'Chennai',   lat:13.08, lng:80.27, hub:true, label:true},
+      {n:'Guwahati',  lat:26.14, lng:91.74, hub:true, label:true},
+      {n:'Ahmedabad', lat:23.02, lng:72.57},
+      {n:'Jaipur',    lat:26.91, lng:75.79},
+      {n:'Amritsar',  lat:31.63, lng:74.87},
+      {n:'Jammu',     lat:32.73, lng:74.86},
+      {n:'Dehradun',  lat:30.32, lng:78.03},
+      {n:'Lucknow',   lat:26.85, lng:80.95},
+      {n:'Kanpur',    lat:26.45, lng:80.33},
+      {n:'Varanasi',  lat:25.32, lng:82.97},
+      {n:'Patna',     lat:25.59, lng:85.14},
+      {n:'Siliguri',  lat:26.72, lng:88.43},
+      {n:'Agartala',  lat:23.83, lng:91.28},
+      {n:'Ranchi',    lat:23.34, lng:85.31},
+      {n:'Bhubaneswar',lat:20.27,lng:85.84},
+      {n:'Raipur',    lat:21.25, lng:81.63},
+      {n:'Bhopal',    lat:23.26, lng:77.41},
+      {n:'Indore',    lat:22.72, lng:75.86},
+      {n:'Surat',     lat:21.17, lng:72.83},
+      {n:'Nagpur',    lat:21.15, lng:79.09},
+      {n:'Hyderabad', lat:17.38, lng:78.49},
+      {n:'Vijayawada',lat:16.51, lng:80.65},
+      {n:'Bengaluru', lat:12.97, lng:77.59},
+      {n:'Coimbatore',lat:11.02, lng:76.96},
+      {n:'Kochi',     lat:9.93,  lng:76.27}
+    ];
+
+    var X0 = 66.6, Y0 = 38.6, KX = 19.4, KY = 20.6;
+    function px(lng){ return +((lng - X0) * KX).toFixed(1); }
+    function py(lat){ return +((Y0 - lat) * KY).toFixed(1); }
+
+    var d = OUTLINE.map(function(p, i){ return (i ? 'L' : 'M') + px(p[0]) + ' ' + py(p[1]); }).join(' ') + ' Z';
+    var outline = document.getElementById('india-outline');
+    if (!outline) return;
+    outline.setAttribute('d', d);
+
+    var g = document.getElementById('india-pins');
+    PINS.forEach(function(p){
+      var x = px(p.lng), y = py(p.lat);
+      if (p.hub){
+        var halo = document.createElementNS(SVG, 'circle');
+        halo.setAttribute('cx', x); halo.setAttribute('cy', y); halo.setAttribute('r', 9);
+        halo.setAttribute('class', 'pin-halo pulse');
+        g.appendChild(halo);
+      }
+      var c = document.createElementNS(SVG, 'circle');
+      c.setAttribute('cx', x); c.setAttribute('cy', y);
+      c.setAttribute('r', p.hub ? 6 : 3.6);
+      c.setAttribute('class', p.hub ? 'pin-hub' : 'pin-dot');
+      var t = document.createElementNS(SVG, 'title');
+      t.textContent = p.n;
+      c.appendChild(t);
+      g.appendChild(c);
+
+      if (p.label){
+        var lx = x + 11, anchor = 'start';
+        if (p.n === 'Mumbai' || p.n === 'Chennai' || p.n === 'Kochi'){ lx = x - 11; anchor = 'end'; }
+        var txt = document.createElementNS(SVG, 'text');
+        txt.setAttribute('x', lx); txt.setAttribute('y', y + 4);
+        txt.setAttribute('text-anchor', anchor);
+        txt.setAttribute('class', 'pin-city');
+        txt.textContent = p.n;
+        g.appendChild(txt);
+      }
+    });
+  })();
 </script>
 </body>
 </html>
