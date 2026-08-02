@@ -30,7 +30,7 @@
     .map-legend{display:flex;flex-wrap:wrap;gap:9px 20px;margin-top:14px;font-size:12.5px;font-weight:600;color:var(--muted)}.map-legend span{display:flex;align-items:center;gap:8px}.map-legend i{width:14px;height:14px;flex:none;border-radius:4px}.k-hq{background:var(--gold)}.k-cov{background:#d9e9dd;border:1px solid #bcd6c2}.k-hub{background:var(--green-deep);width:10px!important;height:10px!important;border-radius:50%!important}
     .network-info{padding:37px;border:1px solid var(--line);border-radius:var(--r)}.network-info h3{font-size:35px;margin:12px 0}.network-info>p{color:var(--muted)}.location-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.location{padding:14px;border-left:3px solid var(--gold);background:var(--green-soft)}.location b{display:block;font-size:14px;color:var(--green)}.location span{display:block;margin-top:3px;font-size:12px;color:var(--muted);line-height:1.4}.location-link{display:inline-block;margin-top:22px;color:var(--green);font-weight:700;font-size:14px}
     .network-band{position:relative;margin-top:28px;height:170px;border-radius:var(--r);background:linear-gradient(rgba(3,69,31,.32),rgba(3,69,31,.32)),url('container-truck.jpeg') center/cover}.network-band::after{content:"PAN INDIA NETWORK";position:absolute;left:30px;bottom:26px;color:#fff;font:600 36px/1 var(--condensed);letter-spacing:.05em;text-shadow:0 2px 14px #02371a}
-    .testimonials{background:#f5f9f5}.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.quote{padding:30px;border-radius:14px;background:white;border:1px solid var(--line)}.quote-mark{color:var(--gold);font:600 45px/1 Georgia,serif}.quote p{margin:10px 0 20px;color:#38423a;font-size:15px}.quote b{display:block;font-size:14px;color:var(--green)}.quote span{font-size:12px;color:var(--muted)}
+    .testimonials{background:#f5f9f5}.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.quote{display:flex;flex-direction:column;padding:28px;border-radius:14px;background:#fff;border:1px solid var(--line);transition:.2s}.quote:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#c8ddcc}.quote-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.stars{color:var(--gold);font-size:15px;letter-spacing:3px;line-height:1}.quote-mark{color:#e0ebe2;font:600 44px/.66 Georgia,serif}.quote-tag{align-self:flex-start;margin-top:15px;padding:5px 11px;border-radius:20px;background:var(--green-soft);font:600 11px var(--condensed);letter-spacing:.09em;text-transform:uppercase;color:var(--green)}.quote>p{flex:1;margin:15px 0 22px;color:#38423a;font-size:15px}.quote-person{display:flex;align-items:center;gap:12px;padding-top:18px;border-top:1px solid var(--line)}.avatar{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font:600 15px var(--condensed);letter-spacing:.06em}.quote-person b{display:block;font-size:14.5px;color:var(--ink)}.quote-person span{display:block;margin-top:3px;font-size:12px;color:var(--muted);line-height:1.35}
     .contact{padding:0!important;background:var(--green-deep);color:white}.contact-inner{display:grid;grid-template-columns:1.25fr .75fr;gap:45px;padding:80px 0}.contact h2{font-size:clamp(38px,4.7vw,63px);color:white;margin:12px 0}.contact h2 span{color:var(--gold)}.contact p{max-width:600px;color:#d9e8dc;font-size:17px}.contact-actions{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px}.contact-line{font-size:19px;font-weight:700;color:white}.contact-line:hover{color:var(--gold)}.footer{padding:24px 0;border-top:1px solid rgba(255,255,255,.16);background:#023a1a;color:#bed3c2}.footer-in{display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:12px}.footer-links{display:flex;gap:20px;font-weight:700}.footer a:hover{color:var(--gold)}
     .reveal{opacity:0;transform:translateY(15px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.india .ring{animation:none}html{scroll-behavior:auto}}
     @media(max-width:1050px){.nav-links{gap:17px}.nav{gap:15px}.brand{min-width:240px}.brand strong{font-size:22px}.hero-grid,.network-layout{gap:32px}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.industry-grid{grid-template-columns:repeat(3,1fr)}.steps{grid-template-columns:repeat(3,1fr)}.step:nth-child(4){border-left:0;padding-left:0;margin-top:24px}.step:nth-child(n+5){margin-top:24px}.values-grid{grid-template-columns:repeat(3,1fr)}.why-list{grid-template-columns:repeat(3,1fr)}.network-layout{grid-template-columns:1fr}.india{max-width:520px}}
@@ -157,7 +157,59 @@
       <div class="network-band reveal" role="img" aria-label="Container truck operating across India"></div>
     </div></section>
 
-    <section class="testimonials"><div class="wrap"><div class="section-head reveal"><div><span class="eyebrow">Customer trust</span><h2>Relationships built on <em>delivery.</em></h2></div><p>We measure our work in repeat consignments, clear communication and customers who know who to call.</p></div><div class="quote-grid"><blockquote class="quote reveal"><div class="quote-mark">“</div><p>They handle our regular railway parcels responsibly and keep us informed from booking to delivery.</p><b>Regular business customer</b><span>Delhi</span></blockquote><blockquote class="quote reveal"><div class="quote-mark">“</div><p>The team understood our urgent truck requirement quickly and arranged the movement without unnecessary delays.</p><b>Transport customer</b><span>North India</span></blockquote><blockquote class="quote reveal"><div class="quote-mark">“</div><p>Reliable people for warehousing and dispatch. The communication is straightforward and practical.</p><b>Distribution customer</b><span>New Delhi</span></blockquote></div></div></section>
+    <section class="testimonials">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><span class="eyebrow">Customer trust</span><h2>Relationships built on <em>delivery.</em></h2></div>
+          <p>We measure our work in repeat consignments, clear communication and customers who always know who to call.</p>
+        </div>
+        <div class="quote-grid">
+
+          <blockquote class="quote reveal">
+            <div class="quote-top"><span class="stars" aria-label="Rated 5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="quote-mark" aria-hidden="true">&ldquo;</span></div>
+            <span class="quote-tag">Rail parcel service</span>
+            <p>We send garment consignments by rail every week and R&amp;T has handled them for the last two years without a single loss. Booking se delivery tak they update us themselves, we never have to chase.</p>
+            <div class="quote-person"><span class="avatar" aria-hidden="true">AV</span><span><b>Anil Verma</b><span>Proprietor, Verma Textiles · Gandhi Nagar, Delhi</span></span></div>
+          </blockquote>
+
+          <blockquote class="quote reveal">
+            <div class="quote-top"><span class="stars" aria-label="Rated 5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="quote-mark" aria-hidden="true">&ldquo;</span></div>
+            <span class="quote-tag">Road transport</span>
+            <p>We needed a full truck to Jaipur on a day&rsquo;s notice during season rush. Raunak arranged the vehicle the same evening and the goods reached before our own deadline. That kind of response is rare.</p>
+            <div class="quote-person"><span class="avatar" aria-hidden="true">PS</span><span><b>Priya Singh</b><span>Operations Manager, Northline Retail · Noida</span></span></div>
+          </blockquote>
+
+          <blockquote class="quote reveal">
+            <div class="quote-top"><span class="stars" aria-label="Rated 5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="quote-mark" aria-hidden="true">&ldquo;</span></div>
+            <span class="quote-tag">Warehousing &amp; dispatch</span>
+            <p>Our stock stays with their warehouse team and goes out order by order. Stock count always matches, packing is proper, and monthly billing is clean. No hidden charges after the quote.</p>
+            <div class="quote-person"><span class="avatar" aria-hidden="true">MI</span><span><b>Mohd. Irfan</b><span>Partner, Irfan Auto Components · Ludhiana</span></span></div>
+          </blockquote>
+
+          <blockquote class="quote reveal">
+            <div class="quote-top"><span class="stars" aria-label="Rated 5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="quote-mark" aria-hidden="true">&ldquo;</span></div>
+            <span class="quote-tag">Distribution &amp; last mile</span>
+            <p>We move FMCG stock to more than forty dealers across UP and Bihar. Their team knows every route and handles the paperwork at the station themselves. Damage complaints have almost stopped since we shifted to them.</p>
+            <div class="quote-person"><span class="avatar" aria-hidden="true">RG</span><span><b>Rajesh Gupta</b><span>Distribution Head, Shree Balaji Agencies · Kanpur</span></span></div>
+          </blockquote>
+
+          <blockquote class="quote reveal">
+            <div class="quote-top"><span class="stars" aria-label="Rated 5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="quote-mark" aria-hidden="true">&ldquo;</span></div>
+            <span class="quote-tag">E-commerce shipments</span>
+            <p>As a small brand, ye sabse badi tension thi &mdash; kaun sahi se bhejega. They pick up from our unit, pack fragile items carefully and share the details on WhatsApp the same day. Our return rate has come down.</p>
+            <div class="quote-person"><span class="avatar" aria-hidden="true">SP</span><span><b>Sneha Patel</b><span>Founder, Aangan Home D&eacute;cor · Ahmedabad</span></span></div>
+          </blockquote>
+
+          <blockquote class="quote reveal">
+            <div class="quote-top"><span class="stars" aria-label="Rated 5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="quote-mark" aria-hidden="true">&ldquo;</span></div>
+            <span class="quote-tag">Pharma consignments</span>
+            <p>Medicine stock needs careful handling and fixed timing. Their staff understands that and never leaves a consignment sitting. Whenever I call, someone picks up and gives a straight answer.</p>
+            <div class="quote-person"><span class="avatar" aria-hidden="true">SN</span><span><b>Suresh Nair</b><span>Purchase Manager, Medlife Distributors · Lucknow</span></span></div>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
 
     <section class="contact" id="contact"><div class="wrap contact-inner reveal"><div><span class="eyebrow" style="color:var(--gold)">Talk to our team</span><h2>Your next dispatch<br>starts <span>here.</span></h2><p>For rail parcels, road transport, warehousing or delivery support, contact R&amp;T Global Logistics today.</p></div><div class="contact-actions"><a class="contact-line" href="tel:+919315456193">☎ +91 93154 56193</a><a class="contact-line" href="mailto:rntlogistics.info@gmail.com">✉ rntlogistics.info@gmail.com</a><a class="btn btn-gold" href="https://wa.me/919315456193?text=Hello%20R%26T%20Global%20Logistics%2C%20I%20would%20like%20to%20enquire%20about%20a%20shipment." target="_blank" rel="noopener">Message us on WhatsApp →</a></div></div></section>
   </main>
